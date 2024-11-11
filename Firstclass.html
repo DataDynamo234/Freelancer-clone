@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="Firstclass.js"></script>
+    <title>New javaScript</title>
+    <style>
+        #tyre{
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="tyre" class="tyre"></div>
+        <button onclick="move()">Move</button>
+        <button onclick="stop()">Stop</button>
+    </main>
+    <div id="show"></div>
+    <h1 id="pull"></h1>
+    <button onclick="alert('Chris'); console.log('Chris is typing');">Click me</button>
+    <button onclick="externalFunction()">External</button>
+</body>
+</html>
+
+<script>
+    let tyreRef=document.getElementById("tyre")
+    function move(){
+       tyreRef.innerHTML ="The tyre is rolling"
+    }
+
+    function stop(){
+       tyreRef.innerHTML ="The tyre stopped rolling"
+    }
+    // let const var
+    // Console => ways of outputting data in javaScript
+    // Alert => ways of outputting data in javaScript
+    // innerHTML => ways of outputting data in javaScript
+
+
+
+    var ident="My name is Chris" // Identifier and the value
+
+    console.log(ident);
+    document.getElementById("show").innerHTML = ident
+    alert(ident)
+
+    // console.log("My name is Chris");
+    let myname = "My name is Fortune"
+    let my_name= "Fortune"
+    let nextLetterIsCapital
+    document.getElementById("pull").innerHTML = myname
+    console.log(myname);
+    alert(myname);
+
+    let iden="My name is Dominic"
+    console.log(iden);
+    alert(iden);
+
+
+    const gender = "male"
+    console.log(gender);
+    alert(gender);
+</script>

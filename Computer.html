@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style></style>
+</head>
+<body>
+    <main class="w-25 shadow rounded p-3 mx-auto">
+       <h1>Guess the number from 0-9</h1>
+       <input id="guessedNumber" class="form-control my-3 py-3" type="text">
+       <button class="btn btn-primary" onclick="guessNumber()">Guess</button>
+       <div id="rez"></div>
+    </main>
+</body>
+</html>
+
+<script>
+    let rez=document.ElementById("rez")
+    function guessNumber(){
+        let randNum = Math.floor(Math.random()  * 10)
+        console.log(randNum);
+        console.log(guessedNumber.value);
+        if(guessedNumber.value == randNum){
+            rez.innerHTML = `<h2 class="text-success">Congratulations.........You
+        }else{
+            rez.innerHTML = '<h2 class="text-danger">You guessed wrongly...Pls 
+                <h1>The computer guessed ${randNum} </h1>
+            `
+        }
+    }
+</script>

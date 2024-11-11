@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #tyre{
+            width: 240px;
+            height: 240px;
+            background-color: yellow;
+            margin-left: 500px;
+            padding-left: 80px;
+            padding-top: 80px;
+            color: red;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            border: 2px solid red;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px 5px gray;
+        }
+        .Emotions{
+            margin-left: 550px;
+            margin-top: 10px;
+        }
+        .hate{
+            width: 100px;
+            height: 30px;
+            background-color: yellow;
+            border: none;
+            border-radius: 3px;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: red;
+            border: 2px solid red;
+            font-weight: bold;
+            box-shadow: 3px 3px 3px 3px gray;
+        }
+        .love{
+            width: 100px;
+            height: 30px;
+            background-color: yellow;
+            border: none;
+            border-radius: 3px;
+            font-size: 16px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            color: red;
+            border: 2px solid red;
+            box-shadow: 3px 3px 3px 3px gray;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="tyre" class="tyre"></div>
+        <div class="Emotions">
+            <button class="hate" onclick="Hate()">Hate</button>
+            <button class="love" onclick="Love()">Love</button>
+        </div>
+    </main>
+    <script>
+        let tyreRef=document.getElementById("tyre")
+    function Hate(){
+       tyreRef.innerHTML ="I hate javaScript"
+    }
+
+    function Love(){
+       tyreRef.innerHTML ="I love javaScript"
+    }
+    </script>
+</body>
+</html>
